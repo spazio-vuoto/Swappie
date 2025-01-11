@@ -1,0 +1,144 @@
+body{
+    font-family: Poppins, sans-serif;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/*classi*/
+
+/*div*/
+.Vendi_il_tuo_vecchio_iPhone{
+    height: 400px;
+    background-color: #4e4d4d;;
+    padding-top: 0px;
+    margin-top: -21.1px;
+}
+.divComeVendereTel{
+    margin-top: 20px;
+    height: 530px;
+    background-color: rgb(245, 247, 247);
+    width: 550px;
+    margin-left: 470px;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.domandeFrequenti{
+    background-color: rgb(245, 245, 245);
+    align-items: start;
+    height: 1020px;
+    padding-top: 30px;
+    transition: height 0.3 ease;
+}
+.divDelleDomande{
+    width: 1450px;
+    cursor: pointer;
+}
+
+/*img*/
+.prime3Img{
+    margin-left: 570px;
+    padding-bottom: 10px;
+}
+
+/*span*/
+.primi3Span{
+    color: rgb(219, 211, 211);
+    margin-left: 20px;
+    margin-top: -202px;
+    position: relative;
+    top: -22px;
+}
+.spanSimulazioneVendita{
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 13px;
+}
+
+/*p*/
+.descrizioneComeVendere{
+    margin-left: 30px;
+    font-size: 16.4px;
+    letter-spacing: 0.1px;
+}
+.pDelleDomande{
+    margin-left: 400px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-right: 370px;
+}
+.pRisposteNascoste{ 
+    margin-left: 400px;
+    color: rgba(150, 148, 148, 0.817);
+    line-height: 24px;
+    font-size: 15px;
+    display: none;
+}
+
+/*h1*/
+.h1SimulazioneVendita{
+    font-size: 20px;
+    display: inline;
+    letter-spacing: 0.4px;
+}
+
+/*hr*/
+.rigaSottoDomande{
+    width: 750px;
+    border-color: rgb(255, 255, 255);
+    margin-left: 400px;
+}
+
+/*id*/
+
+/*h1*/
+#vendiIphone{
+    padding-top: 40px;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(219, 211, 211);
+}
+#h1ComeVendereTel{
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*button*/
+#buttonModelloIphone{
+    font-size: 15px;
+    margin-left: 570px;
+    width: 450px;
+    border-radius: 20px;
+    height: 40px;
+    border-color: blue;
+    color: rgb(1, 1, 165);
+}
+#buttonStimaValoreIphone{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 570px;
+    width: 450px;
+    border-radius: 20px;
+    height: 40px;
+    border-color: black;
+    color: rgb(19, 86, 87);
+    background-color: rgb(240, 227, 210);
+    cursor: not-allowed;
+}
+
+/*span*/
+#spanTitoloConsegnaTel{
+    margin-left: 30px;
+}
+
+/*div*/
+#divPerSfondo{
+    height: 700px;
+    background-image: url("CartellaImmagini/donnaPerSfondo.avif");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color: white;
+}
+#boxContainerDomande{
+    display: grid;
+    grid-auto-rows: min-content;
+}

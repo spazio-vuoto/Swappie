@@ -1,0 +1,104 @@
+/*il body*/
+body {
+    font-family: "Times New Roman";
+    margin: 0;
+}
+
+/*classi*/
+
+/*ul*/
+.primaUl{
+    margin-top: 21px;
+    font-weight: 600;
+}
+.secondaUl{
+    margin-left: 400px;
+    margin-top: -25px;
+}
+
+/*li*/
+.primiLi{
+    display: inline;
+    font-size: small;
+    margin-right: 60px;
+}
+.secondiLi{
+    display: inline;
+    margin-right: 30px;
+}
+
+/*div*/
+.primoDiv{
+    background-color: aliceblue;
+    margin-top: -15px;
+    height: 37px;
+    padding-top: 1px;
+    padding-bottom: 12px;
+}
+.secondoDiv{
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 67px;
+    z-index: 1000;
+}
+.terzoDiv{
+    background-color: rgb(212, 212, 228);
+    height: 40px;
+    margin-top: -20px;
+    z-index: 1;
+}
+
+/*a ul*/
+.linkSecondaUlA{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*link con hover fucus ecc*/
+.linkSecondaUlA:hover{
+    color: blue;
+}
+
+/*id*/
+
+/*li*/
+#primoLi{
+    margin-left: 320px;
+}
+#secondoLi{
+    margin-left: 170px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: -15px;
+}
+
+/*link*/
+#primoLink{
+    text-decoration: none;
+}
+#secondoLink{
+    text-decoration: none;
+    color: black;
+}
+
+/*h1*/
+#primoH1{   
+    margin-left: 110px;
+    color: black;
+    font-family: 'Arial Black', Arial, sans-serif;
+    display: inline;
+    letter-spacing: -2px;
+}
+
+/*p*/
+#primoP{
+    text-align: center;
+    line-height: 48px;
+    font-size: large;
+    font-weight: 600;
+}

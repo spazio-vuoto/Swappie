@@ -1,0 +1,574 @@
+/*classi*/
+
+/*div*/
+.quartoDiv{
+    background-image: url('CartellaImmagini/ImmagineIniziale.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    margin-top: -27px;
+}
+.quintoDiv{
+    display: flex;
+    gap: 20px;
+    background-color: rgb(237, 241, 239);
+    height: 640px;
+}
+.sestoDiv{
+    display: grid;
+    grid-template-columns: 680px 680px;
+    grid-template-rows: 215px 215px;
+    margin-top: -430px;
+    margin-left: 0px;
+}
+.settimoDiv{
+    background-image: url('CartellaImmagini/ragazzaPagina1.avif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    grid-row: span 2;
+    grid-template-rows: 400px;
+}
+.decimoDiv{
+    background-color: white;
+    height: 380px;
+    background-image: url('CartellaImmagini/gift_cards.avif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 250px;
+}
+.undicesimoDiv{
+    background-color: rgb(237, 241, 239);
+    height: 400px;
+}
+.dodicesimoDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 40px;
+}
+.tredicesimoDiv{
+    background-image: url('CartellaImmagini/recensioneUno.jpg');
+    background-size: contain;
+    height: 160px;
+    margin-left: 260px;
+    width: 230px;
+}
+.quattordicesimoDiv{
+    background-image: url('CartellaImmagini/recensioneDue.jpg');
+    background-size: contain;
+    height: 160px;
+    width: 230px;
+}
+.quindicesimoDiv{
+    background-image: url('CartellaImmagini/recensioneTre.jpg');
+    background-size: contain;
+    height: 160px;
+    width: 230px;
+}
+.sedicesimoDiv{
+    background-image: url('CartellaImmagini/recensioneQuattro.jpg');
+    background-size: contain;
+    height: 160px;
+    width: 230px;
+}
+.diciasettesimoDiv{
+    background-color: white;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.diciottesimoDiv{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.diciannovesimoDiv{
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 15px;
+}
+.ventesimoDiv{
+    background-color: rgb(183, 235, 99);
+    margin-top: 110px;
+    height: 200px;
+}
+.divACerchio{
+    display: inline-block;
+    border: 10px solid blue;
+    font-size: small;
+    border-radius: 50%;
+    margin-left: 320px;
+    padding: 15px;
+    width: 37px;
+    margin-top: 50px;
+}
+.divACerchio2{
+    font-size: small;
+    display: inline-block;
+    border: 10px solid blue;
+    border-radius: 50%;
+    padding: 11px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    width: 54px;
+    height: 45px;
+    margin-top: -100px;
+    margin-left: 20px;
+}
+.unSempliceDiv_2{
+    background-color: rgb(23, 65, 14);
+    width: 50%;
+}
+
+/*span*/
+.primoSpan{
+    border: 1px solid black;
+    height: 145px;
+    width: 122px;
+    border-radius: 20px;
+    margin-top: 35px;
+    text-align: center;
+    font-size: larger;
+    padding-top: 10px;
+    background-color: aliceblue;
+}
+.secondoSpan{
+    display: inline;
+    float: left;
+    padding-left: 37px;
+}
+.terzoSpan{
+    text-decoration: underline;
+}
+.spanPerGrid{
+    color: white;
+    padding-right: 20px;
+    font-size: 35px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.spanPerGrid2{
+    color: white;
+    padding-left: 20px;
+    font-size: 35px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/*link*/
+.linkRecensioniSwappie{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.linkInformativaPrivacy{
+    color: black;
+    font-weight: 600;
+}
+
+/*p*/
+.settimoP{
+    margin-top: 130px;
+    height: 100px;
+    padding-top: 20px;
+    background-color: white;
+    margin-bottom: 0px;
+    font-size: medium;
+}
+.ottavoP{
+    background-color: white;
+    margin-top: -18px;
+    height: 40px;
+    border-radius: 15px;
+}
+.nonoP{
+    background-color: white;
+    margin-top: 0px;
+    padding-top: 20px;
+    height: 67px;
+}
+.decimoP{
+    background-color: white;
+    margin-top: 0px;
+    padding-top: 30px;
+    height: 67px;
+}
+.undicesimoP{
+    background-color: white;
+    margin-top: 0px;
+    padding-top: 47px;
+    height: 48px;
+}
+.dodicesimoP{
+    padding-left: 200px;
+    font-size: large;
+}
+.tredicesimoP{
+    text-align: center;
+    font-size: large;
+}
+.quattordicesimoP{
+    text-align: center;
+}
+.unSempliceP{
+    margin-left: 280px;
+    margin-top: -20px;
+}
+.pPerGrid{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-right: 300px;
+    margin-top: 0px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.pPerGrid2{
+    color: white;
+    text-align: center;
+    padding-right: 190px;
+    font-size: 20px;
+    margin-top: 0px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.pPerGrid3{
+    color: white;
+    padding-top: 3px;
+    margin-top: 0px;
+}
+
+/*link con hover fucus ecc*/
+.ottavoP:hover{
+    color: blue;
+}
+.linkInformativaPrivacy:hover{
+    text-decoration: none;
+}
+
+/*id*/
+
+/*h1*/
+#secondoH1{
+    margin-left: 627px;
+    padding-top: 65px;
+    font-size: 40px;
+    color: rgb(18, 18, 96);
+}
+#terzoH1{
+    margin-top: 0px;
+    margin-bottom: 17px;
+}
+#quartoH1{
+    font-size: 20px;
+    width: 400px;
+    padding-left: 160px;
+}
+#quintoH1{
+    margin-top: 0px;
+    margin-left: 870px;
+    padding-top: 120px;
+}
+#sestoH1{
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 40px;
+}
+#settimoH1{
+    text-align: center;
+    margin-top: 53px;
+    margin-bottom: 0px;
+}
+#ottavoH1{
+    padding-top: 30px;
+    margin-top: 130px;
+    height: 20px;
+    background-color: white;
+    margin-bottom: 0px;
+    font-size: medium;
+}
+#nonoH1{
+    padding-top: 20px;
+    margin-top: 130px;
+    height: 20px;
+    background-color: white;
+    margin-bottom: 0px;
+    font-size: medium;
+}
+#decimoH1{
+    padding-top: 20px;
+    margin-top: 130px;
+    height: 20px;
+    background-color: white;
+    margin-bottom: 0px;
+    font-size: medium;
+}
+#undicesimoH1{
+    padding-left: 200px;
+    font-size: 25px;
+}
+#unSempliceH1{
+    margin-left: 200px;
+    padding-top: 15px;
+}
+#unSempliceH1_2{
+    margin-left: 400px;
+}
+
+/*h2*/
+#primoH2{
+    text-align: center;
+    padding-top: 25px;
+}
+#unSempliceH2{
+    color: blue;
+    margin-left: 200px;
+}
+#unSempliceH2_2{
+    margin-left: 350px;
+    margin-top: -22px;
+}
+
+/*p*/
+#secondoP{
+    margin-left: 627px;
+    margin-top: -10px;
+    color: rgb(100, 100, 118);
+}
+#terzoP{
+    font-size: medium;
+    font-weight: 600;
+}
+#quartoP{
+    margin-left: 870px;
+    font-size: larger;
+    margin-top: -10px;
+}
+#quintoP{
+    font-size: large;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#unPBianco{
+    color: white;
+    padding-top: 80px;
+    padding-left: 100px;
+    font-size: 23px;
+}
+#unPBianco2{
+    color: white;
+    padding-left: 100px;
+    font-size: 23px;
+}
+
+/*button*/
+#primoButton{
+    margin-left: 627px;
+    border-radius: 60px;
+    height: 53px;
+    background-color: rgb(18, 18, 96);
+    color: white;
+    font-size: 17px;
+    padding-left: -10px;
+    width: 300px;
+}
+#secondoButton{
+    margin-left: 15px;
+    border-radius: 60px;
+    height: 53px;
+    background-color: azure;
+    color: black;
+    font-size: 17px;
+}
+#terzoButton{
+    height: 70px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+}
+#quartoButton{
+    height: 70px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 13px;
+}
+#quintoButton{
+    height: 70px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 15px;
+}
+#sestoButton{
+    height: 70px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 13px;
+    margin-top: 15px;
+}
+#settimoButton{
+    width: 620px;
+    height: 170px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: large;
+    background-image: url('CartellaImmagini/premium-series-homepage-card.avif');
+    background-repeat: no-repeat;
+    background-position: 30px 40px;
+    background-color: white;
+}
+#ottavoButton{
+    height: 40px;
+    width: 150px;
+    margin-left: 870px;
+    border-radius: 20px;
+    color: white;
+    background-color: blue;
+}
+#nonoButton{
+    background-image: url('CartellaImmagini/bgNonoButton.avif');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 400px 160px;
+    margin-left: 170px;
+    margin-top: 36px;
+    height: 275px;
+    width: 370px;
+    border-radius: 12px;
+    border-color: red;
+    padding: 0px;
+}
+#decimoButton{
+    background-image: url('CartellaImmagini/bgDecimoButton.avif');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 400px 160px;
+    margin-top: 36px;
+    height: 275px;
+    width: 370px;
+    border-radius: 12px;
+    border-color: red;
+    padding: 0px
+}
+#undicesimoButton{
+    background-image: url('CartellaImmagini/bgUndicsimoButton.jpg');
+    background-size: 390px 130px;
+    background-repeat: no-repeat;
+    margin-top: 36px;
+    height: 275px;
+    width: 370px;
+    border-radius: 12px;
+    border-color: red;
+    padding: 0px
+}
+#dodicesimoButton{
+    background-image: url('CartellaImmagini/Email-Blog-Images-6-2.avif');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 350px 170px;
+    margin-left: 205px;
+    width: 350px;
+    height: 305px;
+    border-radius: 12px;
+    padding: 0px;
+}
+#tredicesimoButton{
+    background-image: url('CartellaImmagini/19.avif');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 350px 170px;
+    width: 350px;
+    height: 305px;
+    border-radius: 12px;
+    padding: 0px;
+}
+#quattordicesimoButton{
+    background-image: url('CartellaImmagini/vendere-il-tuo-iPhone-.avif');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 350px 170px;
+    width: 350px;
+    height: 305px;
+    border-radius: 12px;
+    padding: 0px;
+}
+#quindicesimoButton{
+    height: 35px;
+    width: 90px;
+    border-radius: 14px;
+    margin-left: 10px;
+    padding: 2px;
+    font-size: medium;
+    color: grey;
+    border: none;
+}
+#unSempliceButton{
+    margin-left: 350px;
+    border-radius: 60px;
+    height: 53px;
+    background-color: rgb(29, 29, 146);
+    color: white;
+    font-size: 17px;
+    padding-left: -10px;
+    width: 170px;
+}
+
+/*input type email*/
+#primoEmail{
+    width: 200px;
+    height: 30px;
+    margin-left: 580px;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+/*link con hover fucus ecc*/
+#primoButton:hover, #unSempliceButton:hover, #buttonDelFootage:hover{
+    background-color: blueviolet;
+}
+#secondoButton:hover{
+    border-color: blue;
+    color: blue;
+}
+#ottavoButton:hover{
+    background-color: rgb(204, 154, 251);
+}
+
+/*span*/
+#primoSpanDiSpan{
+    border: 1px solid black;
+    height: 145px;
+    width: 122px;
+    margin-left: 168px;
+    margin-top: 35px;
+    border-radius: 20px;
+}
+
+/*div*/
+#unSempliceDiv{
+    width: 50%;
+    background-color: rgb(237, 241, 239);
+}
+#divPerGrid{
+    display: grid;
+    grid-template-columns: 280px 150px 1fr;
+}
+#divPerGrid2{
+    padding-left: 130px;
+    text-align: center;
+}
+#divPerGrid3{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}

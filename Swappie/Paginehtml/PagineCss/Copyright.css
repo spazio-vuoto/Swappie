@@ -1,0 +1,28 @@
+/*classi*/
+
+/*div*/
+.divDelFootage{
+    background-color: rgb(203, 211, 207);
+    margin-top: -15px;
+    height: 30px;
+    padding-top: 15px;
+}
+
+/*a*/
+.aDelFootage{
+    text-decoration: none;
+    color: rgb(86, 88, 90);
+    padding: 5px;
+}
+.aDelFootage:hover{
+    color: rgb(36, 36, 37);
+}
+
+/*id*/
+
+/*p*/
+#pDelDivDelFootage{
+    margin-left: 10px;
+    color: rgb(86, 88, 90);
+    display: inline;
+}

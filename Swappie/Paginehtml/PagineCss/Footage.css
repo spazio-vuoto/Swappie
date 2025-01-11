@@ -1,0 +1,133 @@
+/*classi*/
+
+/*div*/
+.ventunesimoDiv{
+    background-color: rgb(237, 241, 239);
+    height: 1150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: grid;
+    grid-template-columns: 450px 250px 300px 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/*li*/
+.liDelFootage{
+    list-style-type: none;
+    margin-left: 180px;
+    padding-top: 5px;
+}
+.liDelFootage2{
+    list-style-type: none;
+    padding-top: 5px;
+}
+.liDelFootage3{
+    list-style-type: none;
+    margin-left: 180px;
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+}
+.liDelFootage4{
+    list-style-type: none;
+    padding-bottom: 6px;
+}
+.liDelFootage5{
+    list-style-type: none;
+    padding-bottom: 8px;
+}
+.liDelFootage6{
+    list-style-type: none;
+    line-height: 20px;
+}
+
+/*link*/
+.linkAssistenza, .linkContattiStampa{
+    text-decoration: underline;
+    color: rgb(63, 60, 60);
+}
+.linkAssistenza:hover, .linkContattiStampa:hover{
+    color: rgb(0, 0, 0);
+}
+
+/*immagini*/
+.cartePagamento{
+    width: 73px;
+}
+
+/*id*/
+
+/*div*/
+#divDelPagamento{
+    margin-left: 180px;
+}
+
+/*h3*/
+#primoH3{
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    font-size: medium;
+}
+#secondoH3{
+    font-size: medium;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+#terzoH3{
+    font-size: medium;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+#quartoH3{
+    font-size: medium;
+    margin-bottom: 0px;
+}
+#quartoH3_2{
+    font-size: medium;
+    margin-bottom: 0px;
+}
+#sestoH3{
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+#settimoH3{
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+#ottavoH3{
+    padding-bottom: 0px;
+    margin-bottom: -5px;
+}
+
+/*p*/
+#pDelFootage{
+    margin-top: 60px;
+    margin-left: 180px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/*button*/
+#buttonDelFootage{
+    margin-left: 180px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(9, 9, 218);
+    color: white;
+    font-size: 15px;
+    height: 45px;
+    padding: 10px;
+    width: 200px;
+}
+
+/*immagini*/
+#SpedizioneVeloce{
+    width: 110px;
+    margin-left: 185px;
+    padding-top: 15px;
+}
