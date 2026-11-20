@@ -1,28 +1,36 @@
 /*classi*/
 
 /*div*/
-.divDelFootage{
+.divDelFootage {
     background-color: rgb(203, 211, 207);
-    margin-top: -15px;
-    height: 30px;
-    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 4px;
+    padding: 14px 16px;
 }
 
 /*a*/
-.aDelFootage{
+.aDelFootage {
     text-decoration: none;
     color: rgb(86, 88, 90);
     padding: 5px;
 }
-.aDelFootage:hover{
+.aDelFootage:hover {
     color: rgb(36, 36, 37);
 }
 
 /*id*/
 
 /*p*/
-#pDelDivDelFootage{
-    margin-left: 10px;
+#pDelDivDelFootage {
+    margin: 0 auto 0 0;
     color: rgb(86, 88, 90);
-    display: inline;
+}
+
+@media (max-width: 700px) {
+    #pDelDivDelFootage {
+        flex: 1 1 100%;
+        margin-bottom: 4px;
+    }
 }

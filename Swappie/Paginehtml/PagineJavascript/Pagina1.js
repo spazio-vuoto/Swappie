@@ -1,5 +1,7 @@
 const vendiIlTuoVecchioIphone = document.getElementById("primoButton");
 
-vendiIlTuoVecchioIphone.addEventListener("click", ()=>{
-    window.location.href = "VendiIphone.html";
-});
+if (vendiIlTuoVecchioIphone) {
+    vendiIlTuoVecchioIphone.addEventListener("click", ()=>{
+        window.location.href = "VendiIphone.html";
+    });
+}

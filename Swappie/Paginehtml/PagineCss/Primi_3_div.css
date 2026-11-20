@@ -1,104 +1,215 @@
+/* ===== Base ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
 /*il body*/
 body {
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", Times, serif;
     margin: 0;
 }
 
-/*classi*/
-
-/*ul*/
-.primaUl{
-    margin-top: 21px;
-    font-weight: 600;
-}
-.secondaUl{
-    margin-left: 400px;
-    margin-top: -25px;
+img {
+    max-width: 100%;
 }
 
-/*li*/
-.primiLi{
-    display: inline;
-    font-size: small;
-    margin-right: 60px;
-}
-.secondiLi{
-    display: inline;
-    margin-right: 30px;
-}
+/* ===== Barra in alto (scritte) ===== */
 
 /*div*/
-.primoDiv{
+.primoDiv {
     background-color: aliceblue;
-    margin-top: -15px;
-    height: 37px;
-    padding-top: 1px;
-    padding-bottom: 12px;
-}
-.secondoDiv{
-    padding-top: 20px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    height: 67px;
-    z-index: 1000;
-}
-.terzoDiv{
-    background-color: rgb(212, 212, 228);
-    height: 40px;
-    margin-top: -20px;
-    z-index: 1;
 }
 
-/*a ul*/
-.linkSecondaUlA{
-    text-decoration: none;
-    color: black;
+/*ul*/
+.primaUl {
+    list-style: none;
+    margin: 0;
+    padding: 12px clamp(16px, 6vw, 110px);
+    display: flex;
+    align-items: center;
+    gap: 6px clamp(16px, 3vw, 60px);
+    font-weight: 600;
 }
-
-
-/*link con hover fucus ecc*/
-.linkSecondaUlA:hover{
-    color: blue;
-}
-
-/*id*/
 
 /*li*/
-#primoLi{
-    margin-left: 320px;
+.primiLi {
+    font-size: small;
 }
-#secondoLi{
-    margin-left: 170px;
+/* margini "auto": le 3 scritte restano al centro e "Per i consumatori" va a destra */
+#primoLi,
+#secondoLi {
+    margin-left: auto;
+}
+
+/* ===== Header con logo e menu (fisso in alto) ===== */
+
+/*div*/
+.secondoDiv {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
     display: flex;
-    justify-content: end;
-    position: relative;
-    top: -15px;
+    align-items: center;
+    gap: clamp(32px, 8vw, 150px);
+    padding: 14px clamp(16px, 6vw, 110px);
 }
 
 /*link*/
-#primoLink{
+#primoLink {
     text-decoration: none;
-}
-#secondoLink{
-    text-decoration: none;
-    color: black;
+    flex: none;
 }
 
 /*h1*/
-#primoH1{   
-    margin-left: 110px;
+#primoH1 {
+    margin: 0;
     color: black;
     font-family: 'Arial Black', Arial, sans-serif;
-    display: inline;
+    font-size: 2rem;
     letter-spacing: -2px;
 }
 
+/*ul*/
+.secondaUl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 30px;
+}
+
+/*li*/
+.secondiLi {
+    display: block;
+}
+
+/*a ul*/
+.linkSecondaUlA {
+    text-decoration: none;
+    color: black;
+}
+
+/*link con hover fucus ecc*/
+.linkSecondaUlA:hover {
+    color: blue;
+}
+
+/* bottone hamburger: visibile solo su schermi piccoli */
+.menuToggle {
+    display: none;
+    margin-left: auto;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.menuToggle span {
+    display: block;
+    height: 2px;
+    background-color: black;
+    border-radius: 2px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+.navAperta .menuToggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.navAperta .menuToggle span:nth-child(2) {
+    opacity: 0;
+}
+.navAperta .menuToggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===== Banner offerta ===== */
+
+/*link*/
+#secondoLink {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+/*div*/
+.terzoDiv {
+    background-color: rgb(212, 212, 228);
+    padding: 8px 16px;
+}
+
 /*p*/
-#primoP{
+#primoP {
+    margin: 0;
     text-align: center;
-    line-height: 48px;
+    line-height: 1.5;
     font-size: large;
     font-weight: 600;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+    /* barra in alto: niente "Per i consumatori", scritte centrate */
+    .primaUl {
+        justify-content: center;
+        padding: 8px 16px;
+        gap: 4px 20px;
+    }
+    #primoLi,
+    #secondoLi {
+        margin-left: 0;
+    }
+    #secondoLi {
+        display: none;
+    }
+
+    /* header: il menu diventa a tendina */
+    .secondoDiv {
+        gap: 0;
+        padding: 8px 16px;
+    }
+    .menuToggle {
+        display: flex;
+    }
+    .secondaUl {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 4px 16px 12px;
+        background-color: white;
+        border-top: 1px solid #e3e3e3;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    }
+    .navAperta .secondaUl {
+        display: flex;
+    }
+    .secondiLi a {
+        display: block;
+        padding: 14px 4px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+}
+
+@media (max-width: 520px) {
+    .primiLi:nth-child(3) {
+        display: none;
+    }
+    #primoH1 {
+        font-size: 1.75rem;
+    }
+    #primoP {
+        font-size: medium;
+    }
 }
