@@ -1,133 +1,145 @@
 /*classi*/
 
 /*div*/
-.ventunesimoDiv{
+.ventunesimoDiv {
     background-color: rgb(237, 241, 239);
-    height: 1150px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
     display: grid;
-    grid-template-columns: 450px 250px 300px 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px 40px;
+    padding: 32px max(24px, calc((100% - 1300px) / 2)) 40px;
+}
+.ventunesimoDiv ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /*li*/
-.liDelFootage{
-    list-style-type: none;
-    margin-left: 180px;
-    padding-top: 5px;
-}
-.liDelFootage2{
+.liDelFootage,
+.liDelFootage2 {
     list-style-type: none;
     padding-top: 5px;
+    margin: 0;
 }
-.liDelFootage3{
+.liDelFootage3 {
     list-style-type: none;
-    margin-left: 180px;
-    padding-bottom: 0px;
-    margin-bottom: -10px;
+    margin: 0;
 }
-.liDelFootage4{
+.liDelFootage4 {
     list-style-type: none;
     padding-bottom: 6px;
 }
-.liDelFootage5{
+.liDelFootage5 {
     list-style-type: none;
     padding-bottom: 8px;
 }
-.liDelFootage6{
+.liDelFootage6 {
     list-style-type: none;
     line-height: 20px;
 }
 
 /*link*/
-.linkAssistenza, .linkContattiStampa{
+.linkAssistenza, .linkContattiStampa {
     text-decoration: underline;
     color: rgb(63, 60, 60);
 }
-.linkAssistenza:hover, .linkContattiStampa:hover{
+.linkAssistenza:hover, .linkContattiStampa:hover {
     color: rgb(0, 0, 0);
 }
 
 /*immagini*/
-.cartePagamento{
+.cartePagamento {
     width: 73px;
+    height: auto;
 }
 
 /*id*/
 
 /*div*/
-#divDelPagamento{
-    margin-left: 180px;
+#divDelPagamento {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 6px 0;
 }
 
 /*h3*/
-#primoH3{
-    margin-top: 0px;
-    padding-top: 20px;
-    margin-bottom: 0px;
+#primoH3, #secondoH3, #terzoH3, #quartoH3, #quartoH3_2,
+#quintoH3, #sestoH3, #settimoH3, #ottavoH3 {
     font-size: medium;
+    margin: 0 0 6px;
+    padding: 0;
 }
-#secondoH3{
-    font-size: medium;
-    margin-top: 0px;
-    padding-top: 20px;
-    margin-bottom: 0px;
-}
-#terzoH3{
-    font-size: medium;
-    margin-top: 0px;
-    padding-top: 20px;
-    margin-bottom: 0px;
-}
-#quartoH3{
-    font-size: medium;
-    margin-bottom: 0px;
-}
-#quartoH3_2{
-    font-size: medium;
-    margin-bottom: 0px;
-}
-#sestoH3{
-    padding-bottom: 0px;
-    margin-bottom: 5px;
-}
-#settimoH3{
-    padding-bottom: 0px;
-    margin-bottom: 5px;
-}
-#ottavoH3{
-    padding-bottom: 0px;
-    margin-bottom: -5px;
+#terzoH3 {
+    margin-top: 16px;
 }
 
 /*p*/
-#pDelFootage{
-    margin-top: 60px;
-    margin-left: 180px;
+#pDelFootage {
+    margin: 24px 0 0;
     font-weight: 500;
     font-size: 18px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
 }
 
 /*button*/
-#buttonDelFootage{
-    margin-left: 180px;
+#buttonDelFootage {
     margin-top: 10px;
     border-radius: 20px;
     background-color: rgb(9, 9, 218);
     color: white;
     font-size: 15px;
     height: 45px;
-    padding: 10px;
-    width: 200px;
+    padding: 10px 16px;
+    cursor: pointer;
 }
 
 /*immagini*/
-#SpedizioneVeloce{
+#SpedizioneVeloce {
     width: 110px;
-    margin-left: 185px;
-    padding-top: 15px;
+    display: block;
+    margin-top: 8px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1000px) {
+    .ventunesimoDiv {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* su telefono le colonne diventano a fisarmonica (classe aggiunta da Menu.js) */
+@media (max-width: 700px) {
+    .ventunesimoDiv {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+        padding: 8px 16px 24px;
+    }
+    .footerAccordion > ul {
+        border-bottom: 1px solid #d3dad6;
+        padding: 0 0 12px;
+    }
+    .footerAccordion > ul > :first-child {
+        position: relative;
+        cursor: pointer;
+        padding: 14px 32px 8px 0;
+        user-select: none;
+    }
+    .footerAccordion > ul > :first-child::after {
+        content: "+";
+        position: absolute;
+        right: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+    .footerAccordion > ul.aperta > :first-child::after {
+        content: "\2212";
+    }
+    .footerAccordion > ul:not(.aperta) > :not(:first-child) {
+        display: none;
+    }
+    .footerAccordion > ul:not(.aperta) {
+        padding-bottom: 0;
+    }
 }
